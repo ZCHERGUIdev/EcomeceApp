@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:orientation="vertical"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      tools:context=".Fagment.CartFragment">
+
+
+        <include layout="@layout/toolbar"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="PROCEED TO CHECKOUT"
+        android:textColor="#c0c0c8"
+        android:textStyle="bold"
+        app:backgroundTint="#09091a" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_below="@+id/loginButton"
+        android:id="@+id/recyclerview_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+    </LinearLayout>
